@@ -1,0 +1,81 @@
+#backparent {
+  width: 100%;
+  display: flex;
+  flex-direction: column
+}
+.back1 {
+  background-color: #008CB6;
+  height: 117px;
+}
+.back2 {
+  background-color: #FFCAFD;
+  height: 117px;
+}
+.back3 {
+  background-color: #E95627;
+  height: 666px;
+}
+.back4 {
+  background-color: #008CB6;
+  height: 1800px;
+}
+.back5 {
+  background-color: #E95627;
+  height: 773px;
+}
+.back6 {
+  background-color: #FFD923;
+  height: 127px;
+}
+
+#container {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+}
+#container div {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%
+}
+.ell1 {
+  background-color: #1EB081;
+  left: 0;
+}
+.ell2 {
+  background-color: #FFD923;
+  margin-right: 40px;
+}
+.ell3 {
+  background-color: #A66BE4;
+}
+.ell4 {
+  background-color: #FFD923;
+}
+.ell5 {
+  background-color: #A66BE4;
+}
+.ell6 {
+  background-color: #1EB081;
+}
+.ell7 {
+  background-color: #00465B;
+}
+.ell8 {
+  background-color: #A66BE4;
+}
+.ell9 {
+  background-color: #FFD923;
+  margin-right: 35px;
+}
+.ell10 {
+  background-color: #00465B;
+  margin-right: 40px;
+}
+.ell11 {
+  background-color: #1EB081;
+}
+.ell12 {
+  background-color: #FFD923;
+}
