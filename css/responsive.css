@@ -6,6 +6,10 @@
 @media all and (min-device-width: 320px) and (max-device-width: 768px) {
   .back1, .back2 {
     height: 81px;
+  }
+}
+@media all and (device-width: 768px){
+  .back1, .back2 {
     width: 768px;
   }
 }
@@ -15,7 +19,16 @@
     width: 320px;
   }
 }
-
+@media all and (max-device-width:320px) {
+  #backparent {
+    width: 320px;
+  }
+}
+@media all and (max-device-width:320px) {
+  body, html {
+    width: 320px;
+  }
+}
 @media all and (min-device-width: 1440px) {
   .back3 {
     height: 816px;
@@ -36,12 +49,13 @@
     height: 544px;
   }
 }
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media all and (device-width: 768px) {
   .back3 {
     height: 862px;
+    width: 768px;
   }
 }
-@media all and (max-device-width: 768px) {
+@media all and (max-device-width: 320px) {
   .back3 {
     height: 464px;
     width: 320px;
@@ -69,12 +83,13 @@
     height: 1536px;
   }
 }
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media all and (device-width: 768px) {
   .back4 {
     height: 2048px;
+    width: 768px;
   }
 }
-@media all and (max-device-width: 768px) {
+@media all and (max-device-width: 320px) {
   .back4 {
     height: 1136px;
     width: 320px;
@@ -101,12 +116,13 @@
     height: 639px;
   }
 }
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media all and (device-width: 768px) {
   .back5 {
     height: 912px;
+    width: 768px;
   }
 }
-@media all and (max-device-width: 768px) {
+@media all and (max-device-width: 320px) {
   .back5 {
     height: 519px;
     width: 320px;
@@ -114,12 +130,13 @@
 }
 
 
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media all and (device-width: 768px) {
   .back6 {
     height: 112px;
+    width: 768px;
   }
 }
-@media all and (max-device-width: 768px) {
+@media all and (max-device-width: 320px) {
   .back6 {
     height: 75px;
     width: 320px;
@@ -164,6 +181,9 @@
   }
 }
 @media all and (max-device-width: 768px) {
+  #container {
+    width: 768px;
+  }
   #container div {
     width: 81px;
     height: 81px;
@@ -172,7 +192,7 @@
     margin-right: 0;
   }
   .ell1 {
-    margin-right: 6px;
+    margin-right: 10px
   }
 }
 @media all and (max-device-width: 320px) {
