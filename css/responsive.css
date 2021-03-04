@@ -1,9 +1,9 @@
-@media all and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media all and (min-device-width: 380px) and (max-device-width: 1024px) {
   .back1, .back2 {
     height: 112px;
   }
 }
-@media all and (min-device-width: 320px) and (max-device-width: 768px) {
+@media all and (min-device-width: 380px) and (max-device-width: 768px) {
   .back1, .back2 {
     height: 81px;
   }
@@ -13,18 +13,18 @@
     width: 768px;
   }
 }
-@media all and (max-device-width: 320px) {
+@media all and (max-device-width: 380px) {
   .back1, .back2 {
     height: 52px;
     width: 320px;
   }
 }
-@media all and (max-device-width:320px) {
+@media all and (max-device-width:380px) {
   #backparent {
     width: 320px;
   }
 }
-@media all and (max-device-width:320px) {
+@media all and (max-device-width:380px) {
   body, html {
     width: 320px;
   }
@@ -55,7 +55,7 @@
     width: 768px;
   }
 }
-@media all and (max-device-width: 320px) {
+@media all and (max-device-width: 380px) {
   .back3 {
     height: 464px;
     width: 320px;
@@ -89,7 +89,7 @@
     width: 768px;
   }
 }
-@media all and (max-device-width: 320px) {
+@media all and (max-device-width: 380px) {
   .back4 {
     height: 1136px;
     width: 320px;
@@ -122,7 +122,7 @@
     width: 768px;
   }
 }
-@media all and (max-device-width: 320px) {
+@media all and (max-device-width: 380px) {
   .back5 {
     height: 519px;
     width: 320px;
@@ -136,7 +136,7 @@
     width: 768px;
   }
 }
-@media all and (max-device-width: 320px) {
+@media all and (max-device-width: 380px) {
   .back6 {
     height: 75px;
     width: 320px;
@@ -192,10 +192,10 @@
     margin-right: 0;
   }
   .ell1 {
-    margin-right: 10px
+    margin-right: 8px
   }
 }
-@media all and (max-device-width: 320px) {
+@media all and (max-device-width: 380px) {
   #container div {
     width: 52px;
     height: 52px;
