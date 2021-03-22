@@ -24,16 +24,13 @@
     width: 320px;
   }
 }
+
 @media all and (max-device-width:380px) {
   body, html {
     width: 320px;
   }
 }
-@media all and (min-device-width: 1440px) {
-  .back3 {
-    height: 816px;
-  }
-}
+
 @media all and (min-device-width: 1366px) and (max-device-width: 1440px) {
   .back3 {
     height: 534px;
@@ -171,6 +168,11 @@
     width: 112px;
     height: 112px;
   }
+  .traveler {
+    width: 112px;
+    height: 112px;
+    top: 112px;
+  }
 }
 @media all and (max-width: 1024px) {
   .ell2 {
@@ -194,6 +196,12 @@
   .ell1 {
     margin-right: 8px
   }
+  .traveler {
+    width: 81px;
+    height: 81px;
+    top: 81px;
+    border: 8px solid #1EB081;
+  }
 }
 @media all and (max-device-width: 380px) {
   #container div {
@@ -202,5 +210,11 @@
   }
   .ell7, .ell8, .ell9 {
     display: none;
+  }
+  .traveler {
+    height: 52px;
+    width: 52px;
+    top: 52px;
+    border: 6px solid #1EB081;
   }
 }

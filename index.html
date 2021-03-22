@@ -4,40 +4,104 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style media="screen">
-      html {
-        height: 100%;
-      }
       body {
         margin: 0 auto;
         position: relative;
+        height: 2000px;
+        font-family: 'Fira Code', monospace;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
       }
     </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    let x;
+    let y;
+       $(window).on('scroll', function() {
+       y = $(window).scrollTop();
+       x = parseInt(y/3);
+       if (x>0 && x<80) {
+         $('#backparent').css('top','0');
+         $('.traveler').css('left', x + '%');
+       };
+       if (x>70) {
+         $('.buttonhov1').click(function(){
+          $('.gate1').css('width', '187px');
+          setTimeout(function(){
+            $('.traveler').css('top', '210px');
+            $('#backparent').css('top','-180px');
+          },500);
+          setTimeout(function(){
+            $('.traveler').addClass('animation1');
+          },1000);
+       $('.buttonhov2').click(function(){
+         setTimeout(function(){
+         $('.block1').css('opacity','0');
+       },50);
+
+
+
+       });
+
+         });
+       };
+    });
+  });
+    </script>
     <title>Колорист</title>
   </head>
   <body>
     <!-- background -->
     <div id="backparent">
-      <div class="back1"></div>
-      <div class="back2"></div>
-      <div class="back3"></div>
+      <div class="back1">
+        <div id="container">
+          <div class="ell1"></div>
+          <div class="ell2"></div>
+          <div class="ell3"></div>
+          <div class="ell4"></div>
+          <div class="ell5"></div>
+          <div class="ell6"></div>
+          <div class="ell7"></div>
+          <div class="ell8"></div>
+          <div class="ell9"></div>
+          <div class="ell10"></div>
+          <div class="ell11"></div>
+          <div class="ell12"></div>
+        </div>
+      </div>
+      <div class="back2">
+        <div class="traveler"> <img src="images/traveler.svg" alt=""> </div>
+        <div class="headtext">скроль, чтобы начать и кликай на кнопки для продолжения</div>
+      </div>
+      <div class="back3">
+        <div id="helix">
+          <div class="helix1"> <img src="images/helix1.svg" alt=""></div>
+          <div class="helix2"> <img src="images/helix2.svg" alt=""></div>
+          <div class="helix3"> <img src="images/helix3.svg" alt=""></div>
+          <div class="helix4"> <img src="images/helix4.svg" alt=""></div>
+          <div class="helix5"> <img src="images/helix5.svg" alt=""></div>
+          <div class="helix6"> <img src="images/helix6.svg" alt=""></div>
+        </div>
+          <div class="gate1"></div>
+          <div class="maze1">
+            <div class="border"> <img src="images/border.svg" alt=""> </div>
+            <div class="block1"> <img src="images/block1.svg" alt=""> </div>
+            <div class="block2"> <img src="images/block2.svg" alt=""> </div>
+          </div>
+          <div class="button1"> <img src="images/button.svg" alt=""> </div>
+          <div class="buttonhov1"> <img src="images/buttonhov.svg" alt=""> </div>
+          <div class="button2"> <img src="images/button.svg" alt=""> </div>
+          <div class="buttonhov2"> <img src="images/buttonhov.svg" alt=""> </div>
+          <div class="button3"> <img src="images/button.svg" alt=""> </div>
+          <div class="buttonhov3"> <img src="images/buttonhov.svg" alt=""> </div>
+          <div class="text1">выбор цветового <br> режима  <br><br> контроль уровней <br><br> баланс белого</div>
+      </div>
       <div class="back4"></div>
       <div class="back5"></div>
       <div class="back6"></div>
-    </div>
-    <div id="container">
-      <div class="ell1"></div>
-      <div class="ell2"></div>
-      <div class="ell3"></div>
-      <div class="ell4"></div>
-      <div class="ell5"></div>
-      <div class="ell6"></div>
-      <div class="ell7"></div>
-      <div class="ell8"></div>
-      <div class="ell9"></div>
-      <div class="ell10"></div>
-      <div class="ell11"></div>
-      <div class="ell12"></div>
     </div>
   </body>
 </html>

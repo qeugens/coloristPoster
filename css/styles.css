@@ -1,7 +1,10 @@
 #backparent {
+  position: fixed;
+  left: 0px;
   width: 100%;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  transition: all .5s;
 }
 .back1 {
   background-color: #008CB6;
@@ -78,4 +81,171 @@
 }
 .ell12 {
   background-color: #FFD923;
+}
+
+.traveler {
+  position: absolute;
+  left: 0;
+  top: 117px;
+  width: 117px;
+  height: 117px;
+  transition: all .5s;
+}
+.animation1 {
+  animation: down linear 5s 1, leftright linear 5s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes down {
+  0% {top: 210px}
+  9% {top: 361px}
+  18% {top: 297px}
+  27% {top: 453px}
+  36% {top: 384px}
+  45% {top: 542px}
+  54% {top: 474px}
+  63% {top: 629px}
+  72% {top: 563px}
+  81% {top: 718px}
+  90% {top: 653px}
+  100% {top: 714px}
+}
+@keyframes leftright {
+  0% {left: 80%;}
+  4.5%, 22.5%, 40.5%, 58.5%, 76.5%, 94.5%, 100% {left:66%}
+  13.5%, 31.5%, 49.5%, 67.5%, 85.5% {left:90%}
+}
+
+.headtext {
+  position: absolute;
+  left: 65px;
+  top: 162px;
+  line-height: 31px;
+  color: #00465B;
+ }
+.helix1 {
+  position: absolute;
+  top: 319px;
+  right: 50px;
+}
+.helix2 {
+  position: absolute;
+  top: 408px;
+  right: 50px;
+}
+.helix3 {
+  position: absolute;
+  top: 498px;
+  right: 50px;
+}
+.helix4 {
+  position: absolute;
+  top: 587px;
+  right: 50px;
+}
+.helix5 {
+  position: absolute;
+  top: 677px;
+  right: 50px;
+}
+.helix6 {
+  position: absolute;
+  top: 765px;
+  right: 180px;
+}
+.gate1 {
+  position: absolute;
+  width: 391px;
+  height: 17px;
+  right: 0px;
+  top: 234px;
+  background: #00465B;
+  transition: all 1s;
+}
+.button1 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  right: 30px;
+  top: 305px;
+  cursor: pointer;
+}
+.buttonhov1 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  top: 305px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.buttonhov1:hover {
+  opacity: 1;
+  transition: all .1s;
+}
+.button2 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  left: 882px;
+  top: 621px;
+  cursor: pointer;
+}
+.buttonhov2 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 882px;
+  top: 621px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.buttonhov2:hover {
+  opacity: 1;
+  transition: all .1s;
+}
+.button3 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  left: 278px;
+  top: 828px;
+  cursor: pointer;
+}
+.buttonhov3 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 278px;
+  top: 828px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.buttonhov3:hover {
+  opacity: 1;
+  transition: all .1s;
+}
+.border {
+  position: absolute;
+  left: 67px;
+  top: 296px;
+  z-index: 1;
+}
+.block1 {
+  position: absolute;
+  left: 818px;
+  top: 701.5px;
+  opacity: 1;
+  transition: all .5s;
+}
+.block2 {
+  position: absolute;
+  left: 67px;
+  top: 737px;
+  opacity: 1;
+}
+.text1 {
+  position: absolute;
+  left: 276px;
+  top: 498px;
+  color: #FFCAFD;
 }
