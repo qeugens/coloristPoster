@@ -1,10 +1,15 @@
-#backparent {
+.backparent {
+  top: 0;
   position: fixed;
   left: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
   transition: all .5s;
+}
+.backparent_step_1 {
+  top: -175px;
+  transition: all 1s ease;
 }
 .back1 {
   background-color: #008CB6;
@@ -90,9 +95,21 @@
   width: 117px;
   height: 117px;
   transition: all .5s;
+  z-index: 1;
+}
+.begin {
+  animation: first linear 2s, rotate1 linear 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes first {
+  0% {left:0%}
+  100% {left:80%}
+}
+@keyframes rotate1 {
+  100% {transform: rotateZ(720deg);}
 }
 .animation1 {
-  animation: down linear 5s 1, leftright linear 5s 1;
+  animation: down linear 5s 1, leftright linear 5s 1, rotate2 linear 5s;
   animation-fill-mode: forwards;
 }
 @keyframes down {
@@ -114,7 +131,45 @@
   4.5%, 22.5%, 40.5%, 58.5%, 76.5%, 94.5%, 100% {left:66%}
   13.5%, 31.5%, 49.5%, 67.5%, 85.5% {left:90%}
 }
+@keyframes rotate2 {
+  100% {transform: rotateZ(-1080deg);}
+}
 
+.maze {
+  animation: maze linear 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes maze {
+  0%  {left: 66%; top: 714px;}
+  25% {left: 40%; top: 714px;}
+  50% {left: 40%; top: 310px}
+  75% {left: 6%; top: 310px}
+  100% {left: 6%; top: 695px}
+}
+.gear_maze_1 {
+  animation: gear_maze_1 linear 3s, rotation1 linear 3s;
+  animation-fill-mode: forwards;
+}
+.gear_maze_2 {
+  animation: gear_maze_2 linear 3s, rotation2 linear 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes gear_maze_1 {
+  0% {left: 6%; top: 695px}
+  20% {left: 6%; top: 908px}
+  100% {left: 75%; top: 908px}
+}
+@keyframes gear_maze_2 {
+  0% {left: 75%; top: 908px}
+  50% {left: 75%; top: 1271px}
+  100% {left: 30%; top: 1271px}
+}
+@keyframes rotation1 {
+  100% {transform: rotateZ(1080deg);}
+}
+@keyframes rotation2 {
+  100% {transform: rotateZ(-1080deg);}
+}
 .headtext {
   position: absolute;
   left: 65px;
@@ -165,16 +220,16 @@
   display: block;
   opacity: 1;
   position: absolute;
-  right: 30px;
-  top: 305px;
+  left: 30px;
+  top: 263px;
   cursor: pointer;
 }
 .buttonhov1 {
   display: block;
   opacity: 0;
   position: absolute;
-  right: 30px;
-  top: 305px;
+  left: 30px;
+  top: 263px;
   cursor: pointer;
   transition: all .1s;
 }
@@ -186,16 +241,16 @@
   display: block;
   opacity: 1;
   position: absolute;
-  left: 882px;
-  top: 621px;
+  right: 30px;
+  top: 305px;
   cursor: pointer;
 }
 .buttonhov2 {
   display: block;
   opacity: 0;
   position: absolute;
-  left: 882px;
-  top: 621px;
+  right: 30px;
+  top: 305px;
   cursor: pointer;
   transition: all .1s;
 }
@@ -207,11 +262,32 @@
   display: block;
   opacity: 1;
   position: absolute;
+  left: 882px;
+  top: 621px;
+  cursor: pointer;
+}
+.buttonhov3 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 882px;
+  top: 621px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.buttonhov3:hover {
+  opacity: 1;
+  transition: all .1s;
+}
+.button4 {
+  display: block;
+  opacity: 1;
+  position: absolute;
   left: 278px;
   top: 828px;
   cursor: pointer;
 }
-.buttonhov3 {
+.buttonhov4 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -220,7 +296,7 @@
   cursor: pointer;
   transition: all .1s;
 }
-.buttonhov3:hover {
+.buttonhov4:hover {
   opacity: 1;
   transition: all .1s;
 }
@@ -242,10 +318,135 @@
   left: 67px;
   top: 737px;
   opacity: 1;
+  transition: all .5s;
 }
 .text1 {
   position: absolute;
   left: 276px;
   top: 498px;
   color: #FFCAFD;
+}
+.backparent_step_2 {
+  top: -900px;
+  transition: all 2s ease;
+}
+.border2 {
+  position: absolute;
+  left: 100px;
+  top: 971px;
+}
+.block3 {
+  position: absolute;
+  left: 984px;
+  top: 971px;
+  opacity: 1;
+  transition: all .5s;
+}
+.border3 {
+  position: absolute;
+  left: 425px;
+  top: 1335px;
+}
+
+.gear1 {
+  position: absolute;
+  width: 233px;
+  height: 233px;
+  left: 215px;
+  top: 1043px;
+}
+.gear2 {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  right: 940px;
+  top: 1043px;
+}
+.gear3 {
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  left: 587px;
+  top: 1407px;
+}
+.gear4 {
+  position: absolute;
+  width: 229px;
+  height: 229px;
+  right: 618px;
+  top: 1407px;
+}
+.gear5 {
+  position: absolute;
+  width: 141px;
+  height: 141px;
+  right: 493px;
+  top: 1407px;
+}
+.gear_rotate_1 {
+  animation: gear_rotate_1 linear 2.5s;
+  animation-fill-mode: forwards;
+}
+.gear_rotate_2 {
+  animation: gear_rotate_2 linear 2.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes gear_rotate_1 {
+  100% {transform: rotateZ(360deg);}
+}
+@keyframes gear_rotate_2 {
+  100% {transform: rotateZ(-360deg);}
+}
+.text2 {
+  position: absolute;
+  left: 652px;
+  top: 1137px;
+  color: #FFCAFD;
+}
+.button5 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  right: 423px;
+  top: 902px;
+  cursor: pointer;
+}
+.buttonhov5 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  right: 423px;
+  top: 902px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.buttonhov5:hover {
+  opacity: 1;
+  transition: all .1s;
+}
+.conveyor {
+  position: absolute;
+  left: 67px;
+  top: 1421px;
+}
+.button6 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  left: 478px;
+  top: 1902px;
+  cursor: pointer;
+}
+.buttonhov6 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 478px;
+  top: 1902px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.buttonhov6:hover {
+  opacity: 1;
+  transition: all .1s;
 }

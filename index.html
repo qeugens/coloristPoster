@@ -17,45 +17,68 @@
       }
     </style>
     <script type="text/javascript">
+    // let x;
+    // let y;
+    //    $(window).on('scroll', function() {
+    //    y = $(window).scrollTop();
+    //    x = parseInt(y/3);
+    //    if (x>0 && x<80) {
+    //      $('#backparent').css('top','0');
+    //      $('.traveler').css('left', x + '%');
+    //    };
+    //    if (x>90 && $('.block1'))
+    //    if (x>70) {
     $(document).ready(function(){
-    let x;
-    let y;
-       $(window).on('scroll', function() {
-       y = $(window).scrollTop();
-       x = parseInt(y/3);
-       if (x>0 && x<80) {
-         $('#backparent').css('top','0');
-         $('.traveler').css('left', x + '%');
-       };
-       if (x>70) {
          $('.buttonhov1').click(function(){
+           $('.traveler').addClass('begin')
+         });
+         $('.buttonhov2').click(function(){
           $('.gate1').css('width', '187px');
           setTimeout(function(){
             $('.traveler').css('top', '210px');
-            $('#backparent').css('top','-180px');
+            $('.backparent').addClass('backparent_step_1');
           },500);
           setTimeout(function(){
             $('.traveler').addClass('animation1');
           },1000);
-       $('.buttonhov2').click(function(){
-         setTimeout(function(){
+        });
+       $('.buttonhov3').click(function(){
          $('.block1').css('opacity','0');
-       },50);
+        setTimeout(function(){
+         $('.traveler').addClass('maze');
+       },500);
+     });
+       $('.buttonhov4').click(function(){
+         $('.block2').css('opacity','0');
+         $('.backparent').addClass('backparent_step_2');
+        setTimeout(function(){
+         $('.traveler').addClass('gear_maze_1');
+         },500);
+         setTimeout(function(){
+         $('.gear1').addClass('gear_rotate_1');
+         $('.gear2').addClass('gear_rotate_2');
+         },1000);
+       $('.buttonhov5').click(function(){
+         $('.block3').css('opacity','0');
+         setTimeout(function(){
+           $('.traveler').addClass('gear_maze_2');
+         },500);
+         setTimeout(function(){
+           $('.gear3').addClass('gear_rotate_1');
+           $('.gear4').addClass('gear_rotate_2');
+           $('.gear5').addClass('gear_rotate_1');
+         },1500);
+       })
 
+     });
 
-
-       });
 
          });
-       };
-    });
-  });
     </script>
     <title>Колорист</title>
   </head>
   <body>
-    <!-- background -->
-    <div id="backparent">
+    <div class="backparent">
       <div class="back1">
         <div id="container">
           <div class="ell1"></div>
@@ -74,7 +97,7 @@
       </div>
       <div class="back2">
         <div class="traveler"> <img src="images/traveler.svg" alt=""> </div>
-        <div class="headtext">скроль, чтобы начать и кликай на кнопки для продолжения</div>
+        <div class="headtext">кликай на кнопки, чтобы шарик двигался</div>
       </div>
       <div class="back3">
         <div id="helix">
@@ -87,9 +110,9 @@
         </div>
           <div class="gate1"></div>
           <div class="maze1">
-            <div class="border"> <img src="images/border.svg" alt=""> </div>
-            <div class="block1"> <img src="images/block1.svg" alt=""> </div>
-            <div class="block2"> <img src="images/block2.svg" alt=""> </div>
+            <div class="border"> <img src="images/border.svg" alt=""></div>
+            <div class="block1"> <img src="images/block1.svg" alt=""></div>
+            <div class="block2"> <img src="images/block2.svg" alt=""></div>
           </div>
           <div class="button1"> <img src="images/button.svg" alt=""> </div>
           <div class="buttonhov1"> <img src="images/buttonhov.svg" alt=""> </div>
@@ -97,9 +120,26 @@
           <div class="buttonhov2"> <img src="images/buttonhov.svg" alt=""> </div>
           <div class="button3"> <img src="images/button.svg" alt=""> </div>
           <div class="buttonhov3"> <img src="images/buttonhov.svg" alt=""> </div>
+          <div class="button4"> <img src="images/button.svg" alt=""> </div>
+          <div class="buttonhov4"> <img src="images/buttonhov.svg" alt=""> </div>
           <div class="text1">выбор цветового <br> режима  <br><br> контроль уровней <br><br> баланс белого</div>
       </div>
-      <div class="back4"></div>
+      <div class="back4">
+        <div class="border2"> <img src="images/border2.svg" alt=""> </div>
+        <div class="block3"> <img src="images/block3.svg" alt=""> </div>
+        <div class="border3"> <img src="images/border3.svg" alt=""> </div>
+          <div class="gear1"> <img src="images/gear1.svg" alt=""> </div>
+          <div class="gear2"> <img src="images/gear2.svg" alt=""> </div>
+          <div class="gear3"> <img src="images/gear3.svg" alt=""> </div>
+          <div class="gear4"> <img src="images/gear4.svg" alt=""> </div>
+          <div class="gear5"> <img src="images/gear5.svg" alt=""> </div>
+        <div class="text2">микширование каналов <br><br> выборочная коррекция цвета</div>
+        <div class="button5"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov5"> <img src="images/buttonhov.svg" alt=""> </div>
+        <div class="conveyor"> <img src="images/conveyor.svg" alt=""> </div>
+        <div class="button6"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov6"> <img src="images/buttonhov.svg" alt=""> </div>
+      </div>
       <div class="back5"></div>
       <div class="back6"></div>
     </div>
