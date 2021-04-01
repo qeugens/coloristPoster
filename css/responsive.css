@@ -62,7 +62,7 @@
 
 @media all and (min-device-width: 1440px) {
   .back4 {
-    height: 2100px;
+    height: 1800px;
   }
 }
 @media all and (min-device-width: 1366px) and (max-device-width: 1440px) {
@@ -93,7 +93,7 @@
   }
 }
 
-@media all and (min-device-width: 1440px) {
+/* @media all and (min-device-width: 1440px) {
   .back5 {
     height: 921px;
   }
@@ -124,7 +124,7 @@
     height: 519px;
     width: 320px;
   }
-}
+} */
 
 
 @media all and (device-width: 768px) {

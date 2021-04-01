@@ -17,17 +17,6 @@
       }
     </style>
     <script type="text/javascript">
-    // let x;
-    // let y;
-    //    $(window).on('scroll', function() {
-    //    y = $(window).scrollTop();
-    //    x = parseInt(y/3);
-    //    if (x>0 && x<80) {
-    //      $('#backparent').css('top','0');
-    //      $('.traveler').css('left', x + '%');
-    //    };
-    //    if (x>90 && $('.block1'))
-    //    if (x>70) {
     $(document).ready(function(){
          $('.buttonhov1').click(function(){
            $('.traveler').addClass('begin')
@@ -62,16 +51,47 @@
          $('.block3').css('opacity','0');
          setTimeout(function(){
            $('.traveler').addClass('gear_maze_2');
-         },500);
+         },200);
          setTimeout(function(){
            $('.gear3').addClass('gear_rotate_1');
            $('.gear4').addClass('gear_rotate_2');
            $('.gear5').addClass('gear_rotate_1');
-         },1500);
+         },1000);
+       });
+       $('.buttonhov6').click(function(){
+         setTimeout(function(){
+           $('.traveler').addClass('conveyor_maze_1');
+         },100);
+         setTimeout(function(){
+           $('.backparent').addClass('backparent_step_3');
+         },800);
+        $('.buttonhov7').click(function(){
+          $('.block4').css('opacity','0');
+          setTimeout(function(){
+            $('.traveler').addClass('conveyor_maze_2')
+          },500)
+        })
+        $('.buttonhov8').click(function(){
+          $('.carousel').addClass('carousel_rotate')
+          $('.traveler').addClass('carousel_traveler')
+        })
+        $('.buttonhov9').click(function(){
+          $('.block5').css('opacity','0');
+          setTimeout(function(){
+            $('.traveler').addClass('afterall_maze');
+          },500)
+        $('.buttonhov10').click(function(){
+          $('.backparent').addClass('backparent_step_4');
+          $('.traveler').addClass('dissappearing');
+        })
+        $('.buttonhov11').click(function(){
+          $('.backparent').addClass('backparent_step_5');
+          $('.backparent').addClass('backparent_step_6');
+          $('.traveler').addClass('final_animation');
+        })
+        })
        })
-
      });
-
 
          });
     </script>
@@ -96,7 +116,7 @@
         </div>
       </div>
       <div class="back2">
-        <div class="traveler"> <img src="images/traveler.svg" alt=""> </div>
+        <div class="traveler"> <img src="images/traveler2.svg" alt=""> </div>
         <div class="headtext">кликай на кнопки, чтобы шарик двигался</div>
       </div>
       <div class="back3">
@@ -107,6 +127,10 @@
           <div class="helix4"> <img src="images/helix4.svg" alt=""></div>
           <div class="helix5"> <img src="images/helix5.svg" alt=""></div>
           <div class="helix6"> <img src="images/helix6.svg" alt=""></div>
+          <div class="helix7"> <img src="images/helix7.svg" alt=""></div>
+          <div class="helix8"> <img src="images/helix8.svg" alt=""></div>
+          <div class="helix9"> <img src="images/helix9.svg" alt=""></div>
+          <div class="helix10"> <img src="images/helix10.svg" alt=""></div>
         </div>
           <div class="gate1"></div>
           <div class="maze1">
@@ -137,11 +161,40 @@
         <div class="button5"> <img src="images/button.svg" alt=""> </div>
         <div class="buttonhov5"> <img src="images/buttonhov.svg" alt=""> </div>
         <div class="conveyor"> <img src="images/conveyor.svg" alt=""> </div>
+        <div class="block4"> <img src="images/block4.svg" alt=""> </div>
         <div class="button6"> <img src="images/button.svg" alt=""> </div>
         <div class="buttonhov6"> <img src="images/buttonhov.svg" alt=""> </div>
+        <div class="button7"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov7"> <img src="images/buttonhov.svg" alt=""> </div>
+        <div class="carousel"> <img src="images/carousel.svg " alt=""> </div>
+        <div class="button8"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov8"> <img src="images/buttonhov.svg" alt=""> </div>
+        <div class="border4"> <img src="images/border4.svg" alt=""> </div>
+        <div class="block5"> <img src="images/block5.svg" alt=""> </div>
+        <div class="block6"> <img src="images/block6.svg" alt=""> </div>
+        <div class="button9"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov9"> <img src="images/buttonhov.svg" alt=""> </div>
+        <div class="text3"> настройка кривых </div>
+        <div class="text4"> контроль уровней <br><br> корректировка сочности </div>
+        <div class="text5"> добавление шума <br><br> корректировка сочности <br><br> выравнивание яркости <br><br> постеризация <br><br> увеличение насыщенности</div>
+        <div class="button10"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov10"> <img src="images/buttonhov.svg" alt=""> </div>
+        <div class="button11"> <img src="images/button.svg" alt=""> </div>
+        <div class="buttonhov11"> <img src="images/buttonhov.svg" alt=""> </div>
       </div>
-      <div class="back5"></div>
-      <div class="back6"></div>
+      <div class="back5">
+        <div class="final"> <img src="images/final.svg" alt=""> </div>
+        <div class="text6">последняя <br> проверка</div>
+        <div class="text7">готово <br><br>   это твой идеальный <br> оттенок</div>
+      </div>
+      <div class="back6">
+        <div class="futer_text"> дизайн маши журанковой <br> @qeugens </div>
+        <div class="futer_container">
+          <div class="futer1"></div>
+          <div class="futer2"></div>
+          <div class="futer3"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
